@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22B136BA147CE3C2000926EB /* FTAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2962E90FE18E0000B9D71D /* FTAnimationManager.m */; };
 		DF16614D1174CAC700054B46 /* AnimationChaining.m in Sources */ = {isa = PBXBuildFile; fileRef = DF16614C1174CAC700054B46 /* AnimationChaining.m */; };
 		DF1E44F010C29C1500F80FC0 /* FTAnimation+UIView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1E44ED10C29C1500F80FC0 /* FTAnimation+UIView.h */; settings = {ATTRIBUTES = (); }; };
 		DF1E44F110C29C1500F80FC0 /* FTAnimation+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1E44EE10C29C1500F80FC0 /* FTAnimation+UIView.m */; };
@@ -452,7 +453,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FTUtils" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -552,6 +553,7 @@
 				DF16614D1174CAC700054B46 /* AnimationChaining.m in Sources */,
 				DF2FCB671325A9D100B38930 /* FTUtils+UIGestureRecognizer.m in Sources */,
 				DFD9B2A01325B68200774275 /* GestureRecognizerBlocks.m in Sources */,
+				22B136BA147CE3C2000926EB /* FTAnimationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,7 +694,7 @@
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
@@ -716,7 +718,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
@@ -732,6 +734,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv6;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -743,6 +746,7 @@
 				INFOPLIST_FILE = "FTAnimationExamples-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -762,6 +766,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv6;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -770,6 +775,7 @@
 				INFOPLIST_FILE = "FTAnimationExamples-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
